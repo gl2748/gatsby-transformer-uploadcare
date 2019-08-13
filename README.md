@@ -21,16 +21,12 @@ A gatsby source plugin for pulling in third party api data.
 
 plugins: [
   {
-    resolve: 'gatsby-source-thirdparty',
+    resolve: 'gatsby-transformer-uploadcare',
     options: {
-      // The url, this should be the endpoint you are attempting to pull data from
-      url: `http://yourapi.com/api/v1/posts`,
+        // the target string, fields containing this string will be treated as uploadcare Urls, and this plugin will attempt to fetch data from them.
+      targetString: `http://yourapi.com/api/v1/posts`,
 
-      // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
-      // using this name. i.e. posts.json
-      name: `posts`,
-
-      // Optional simple authentication
+      // Optional simple authentication for your uploadcare requests.
       auth: {
         username: 'myusername',
         password: 'supersecretpassword1234'

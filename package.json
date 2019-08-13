@@ -1,25 +1,20 @@
 {
-  "name": "gatsby-source-thirdparty",
+  "name": "gatsby-transformer-uploadcare",
   "version": "1.0.5",
-  "description": "Gatsby plugin to handle any third party api data intake.",
+  "description": "Gatsby plugin to fetch metadata for uploadcare urls.",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir . --ignore __tests__",
     "watch": "babel -w src --out-dir . --ignore __tests__",
     "prepublish": "cross-env NODE_ENV=production npm run build"
   },
-  "homepage": "https://github.com/abonventre/gatsby-source-thirdparty#readme",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "gatsby-source-plugin"
+    "gatsby-transformer-plugin"
   ],
-  "author": "Anthony Bonventre <abonventre@gmail.com>",
+  "author": "Iain Maitland <iain@iainmaitland.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abonventre/gatsby-source-thirdparty.git"
-  },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
